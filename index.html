@@ -7,21 +7,23 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="js/index.js">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul> 
-                <div class="toggle-btn"></div>
+    
+        <nav id="nav">
+            <div class="bar-container"><img src="./images/bars-solid (1).svg" alt="" id="bar" onclick="toggle();"></div>
+            <ul id="nav-list"> 
                 <li><a href="">Home</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Services</a></li>
-                <button class="btnCV">Download CV</button>
-            </ul>
+                <li><a href="">Download CV</a></li>
+<!--                 <button class="btnCV">Download CV</button>
+ -->            </ul>
         </nav>
-    </header>
+    
     <div class="first_section">
         <div class="header">           
             <p>MINIMALIST</p>
@@ -49,10 +51,10 @@
             </div>
             <div class="projects">
                 <div class="project-image">
-                    <img src="./images/project-2.jpg" alt="">
+                    <img src="./images/phtouristspots.png" alt="">
                 </div>
                 <div class="project-title">
-                    <h3>Coffee Shop Landing Page</h3>
+                    <h3>Philippines Tourist Spots</h3>
                 </div>
                 <div class="project-description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam labore quidem inventore possimus vel, iusto velit aut id accusantium veritatis!</p>
@@ -307,19 +309,32 @@
 
 
 <!-- Contact Form -->
-   <!--  <div class="contact-section">
-        <h2>Contact Form</h2>
-        <div class="contact-wrapper">
-            <div >
-                <input type="text"><br>
-                <input type="text">
-            </div>
-            <div>
-                <input type="text">
-            </div>
+        <div class="contact-section">
+            <h2>Contact Form</h2>
+            <form action="" class="contact-form">
+                <input type="text" class="contact-form-text" placeholder="Your Name">
+                <input type="email" class="contact-form-text" placeholder="Your Email">
+                <textarea name="" class="contact-form-text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" class="contact-form-btn">
+            </form>
         </div>
-    </div> -->
 <!-- Contact Form -->
 
+<script>
+
+    function toggle(){
+/*         document.getElementById("bar").style.display = "none";
+        
+ */     document.getElementById("nav").style.zIndex = "10000";
+        document.getElementById("nav").className = "nav-small";
+        document.getElementById("nav").style.height = "200px";
+        document.getElementById("nav-list").style.display = "block";
+
+        
+             
+        
+        }
+       
+</script>
 </body>
 </html>
