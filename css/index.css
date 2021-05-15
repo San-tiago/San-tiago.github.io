@@ -182,6 +182,7 @@ h2{
    font-weight: lighter;
 }
 .project-description button:hover{
+   cursor: pointer;
    background-color: #404040;
    border: 0.5px solid #FFFFFF;
    color: #FFFFFF;
@@ -203,7 +204,9 @@ h2{
 .service-wrapper{
     top: 2%;
 }
-
+.services-section project-title h3{
+    font-size: 13px;
+}
 .services{
     margin-left: 4%;
     display: flex;
@@ -229,7 +232,7 @@ h2{
 .service-description p{
     letter-spacing: 2%;
     line-height: 2em;
-    font-size: 12px;
+    font-size: 13px;
     color: #787878;
     padding: 0.5em 0.2em;
 }
@@ -341,6 +344,11 @@ h2{
     color: #787878;
 }
 
+.note{
+    width: 90%;
+    margin: auto;
+    height: 90px;
+}
 
 
 
@@ -383,11 +391,14 @@ h2{
  }
 
 
+ /* Footer */
 
 
 
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
     body{
         overflow-x: hidden;
     }
