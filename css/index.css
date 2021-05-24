@@ -5,7 +5,11 @@ body html{
     padding: 0;
     box-sizing: border-box;
     position: relative;
+   overflow:hidden;
     
+}
+html {
+  scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins';
@@ -14,18 +18,22 @@ a{
     text-decoration: none;
     color: #8D8D8D;
     font-weight: lighter;
+    transition: 0.3s;
+
 }
 .__nav a:hover{
     color: #505050;
     border-bottom: solid 2px #505050;
     padding-bottom: 1px;
     cursor: pointer;
+    font-size: 1.08em;
 }
 .__container{
-    width: 100%;
+    width: 99%;
     height: auto;
     position: absolute;
     top: 0;
+    overflow:hidden;
     
 }
 .__nav{
@@ -36,6 +44,8 @@ a{
     justify-content: flex-end;
     background-color: white;
     margin-top: 0;
+    z-index: 20;
+    
    
 }
 .__nav ul{
@@ -75,10 +85,10 @@ a{
 .__content h1{
     text-align: center;
     font-weight: lighter;   
-    color: rgb(50, 50, 50, 0.85  );
+    color: rgb(50, 50, 50, 0.85);
     letter-spacing: .7em;
     font-size: 60px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 .__content h3{
     font-weight: 20;   
@@ -106,10 +116,11 @@ a{
     display: flex;
     justify-content: center;
 }
+
 .__title h2{
     margin-left: 1em;
     font-weight: lighter;
-    color: rgb(50, 50, 50, 0.7);
+    color: rgb(50, 50, 50, 0.85  );
     letter-spacing: 3px;
 }
 .__projects{
@@ -117,19 +128,27 @@ a{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 0 5%;
   
 }
 
 .__project{
-    width: 30%;
-    max-height: 60%;
+    width: 28%;
+    max-height: 70%;
     border-bottom: solid 1px #E5E5E5;
     text-align: center;
     margin: 5% 0px;
     padding-bottom: 3%;
+  
+}
+.project-title p{
+    font-size: 0.7em;
+    padding: 0;
 }
 .__projectimage{
     width: 100%;
+    height: auto;
+    position: relative;
 }
 .__projectimage img{
     background-size: cover;
@@ -137,38 +156,76 @@ a{
     object-fit: cover;
     background-position:center;
     height: 50%;
-    width: 95%;    
-    padding-bottom:1em;
+    width: 100%;    
+    transition: 0.8s;
+
 }
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 5;
+    height: 95%;
+    width: 100%; 
+    background-color: rgba(38, 38, 38, 0.85);
+    display: none;
+    
+}
+.overlay div{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay div i{  
+    font-size: 2.5em;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.__project img:hover + .overlay{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
 .project-title h3{
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: lighter;
     color: #464646;
 }
-.project-description{
+/* .project-description{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
+    text-align: left;
+    gap: 0;
+} */
 .project-description p{
-    width: auto;
-    height: 10%;
-    padding: 10px;
-    font-size: 0.8em;
+/*     letter-spacing: 0.02em;
+ */    text-align: left;
+    max-width: 100%;
+    max-height: 10%;
+    padding: 13px 1em;
+    font-size: 0.75em;
     color: #787878;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
     font-weight: lighter;
 }
-.project-description button{
+button{
+    margin-top: 3%;
     background-color: #FFFFFF;
     border: 0.1px solid #717171;
     color: #2F2F2F;
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight:100;
    
  }
- .project-description button:hover{
+ button:hover{
     cursor: pointer;
     background-color: #404040;
     border: 0.5px solid #FFFFFF;
@@ -188,24 +245,29 @@ a{
   
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 100%;
     height: auto;  
     text-align: left;
-    padding: 5% 5%;
+    padding: 3% 5%;
   
     margin: 5% 0px;
 
 }
 .service-wrapper{
-    max-width: 40%; 
+    max-width: 60%; 
+   
     
 }
 .services img{
     max-width: 100%;
-    height: 279px;
+    height: auto;
     border: solid 1px #E5E5E5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    object-fit: cover;
  }
  /* .service-wrapper{
      top: 0;
@@ -214,12 +276,13 @@ a{
  } */
 
 .service-description p{
-    letter-spacing: 2%;
+    letter-spacing: 0.0.5em;
     line-height: 2em;
-    font-size: 0.8em;
-    color: #787878;
-    padding: 0.5em 0.2em;
+    font-size: 0.90em;
+    color: #8a8a8a;
+    padding: 0.5em 0px;
     font-weight: lighter;
+    word-spacing: 0.3em;
 }
 
 /* Design Tools & Web Technologies */
@@ -282,7 +345,7 @@ a{
     margin: 20% auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .aboutme-image-container{
@@ -327,8 +390,58 @@ a{
 .aboutme-section p{
     margin-right: 2%;
     line-height: 2em;
-    font-size: 13px;
-    color: #787878;
+    font-size: 0.90em;
+    color: #8a8a8a;
+}
+
+
+.__footer{
+    max-width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.__logos{
+    max-width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.__icons{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.__icons i{
+    margin: 0 0.8em;
+    font-size: 1.9em;
+    transition: 0.3s;
+    color: rgb(50, 50, 50, 0.85);
+
+}
+.__icons i:hover{
+    color: rgba(26, 26, 26, 0.85);
+    font-size: 2.2em;
+}
+
+.__email{
+    max-width: 45%;
+    height: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-left: 1px solid rgb(50, 50, 50, 0.85  );
+}
+.__email p{
+    margin-left: 4em;
+    font-size: 0.8em;
+    color: rgb(50, 50, 50, 0.85  );
 }
 
 /* SMALL SCREEN */
@@ -343,16 +456,16 @@ a{
         margin-left: 1em;
     }
     .__content h1{
-        font-size: 2.5em;
+        font-size: 2.6em;
     }
     .__content h3{
     
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .__content h6{
 
     
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
     .__projects{
         display: flex;
@@ -363,7 +476,7 @@ a{
     .__title h2{
         margin-left: 1em;
         font-weight: lighter;
-        color: rgb(50, 50, 50, 0.7);
+        color: rgb(50, 50, 50, 0.85);
         letter-spacing: 3px;
         font-size: 1.1em;
     }
@@ -378,9 +491,15 @@ a{
         flex-direction: column;
         padding-bottom: 3%;
     }
+    .project-description p{
+        width: 90%;
+        margin: auto;
+        padding: 1.5em 1em;
+     
+    }
     
     .service-wrapper{
-        max-width: 95%;
+        max-width: 100%;
     }
     .services{
         display: flex;
@@ -395,10 +514,7 @@ a{
     .services img{
         width: 100%;
         height: 15%;
-        background-size: cover;
-        
-        object-fit: cover;
-        background-position:center;
+        border:none;
     }
     .service-description p{
         font-size: 0.8em; 
@@ -423,6 +539,24 @@ a{
         margin-top: 1.8em;
         margin-bottom: 1em;
     }
+    .__icons{
+        width: 50%;
+      
+    }
+    .__icons i{
+        font-size: 1.5em;
+        margin: 0.5;
+    
+    }
+    .__email{
+        width: 50%;
+        
+    }
+    .__email p{
+        font-size: 0.6em;
+        margin-left: 2.5em;
+    }
+    
 
     
 }
@@ -441,21 +575,29 @@ a{
     .__title h2{
         font-size: 1.2em;
     }
+    .__projects{
+        padding: 2%;
+    }
     .__project{
-        width: 50%;
+        width: 48%;
       
     }
+    
    
     .services{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
+    .services img{
+        border: none;
+    }
     .service-wrapper{
-        max-width: 95%;
+        max-width: 100%;
     }
     .service-description p{
+        width: 100%;
         font-size: 0.8em; 
     }
     .tools{
@@ -484,6 +626,14 @@ a{
         margin-top: 1.8em;
         margin-bottom: 1em;
     }
+    .__icons i{
+        font-size: 1.7em;
+    
+    }
+    .__email p{
+        font-size: 0.7em;
+        margin-left: 2.5em;
+    }
 
 }
 /* LARGE SCREEN */
@@ -498,32 +648,41 @@ a{
     .__projectimage img{
         height: 40%;   
     }
+    .project-description p{
+        text-align: center;
+        padding: 0px 15px;
+        
+    }
     .__title h2{
         font-size: 1.2em;
     }
    
     .service-wrapper{
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
   
     }
     .services{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        padding: 3% 0px;
     }
-    .services div{
+  /*   .services div{
         width: 90%;
+    } */
+    .image-wrapper{
+        width: 80%;
     }
     .services img{
         width: 100%;
-        height: 15%;
-        background-size: cover;
+        height: 10%;
         
-        object-fit: cover;
-        background-position:center;
+        border: none;
+        
     }
+    
     .service-description p{
         font-size: 0.8em; 
     }   
@@ -546,12 +705,16 @@ a{
     }
 
     .aboutme-image-container{
-      
+        
         box-shadow: none;
     }
     .headline h2{
         font-size: 1.6em;
         margin-top: 1.8em;
         margin-bottom: 1em;
+    }
+    .__email p{
+        font-size: 0.7em;
+        margin-left: 2.5em;
     }
 }
