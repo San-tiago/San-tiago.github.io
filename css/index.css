@@ -160,6 +160,21 @@ a{
     transition: 0.8s;
 
 }
+.__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.__links i{
+    font-size: 2em;
+    margin: 0px 0.6em;
+    transition: 0.3s;
+
+}
+.__links i:hover{
+   color: #404040;
+   font-size: 2.2em;
+}
 .overlay{
     position: absolute;
     top: 0;
