@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 body html{
     margin: 0;
     padding: 0;
@@ -68,8 +75,8 @@ a{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    animation: transitionIn 2s;
 }
-
 .__content div{
     width: 100%;
     grid-row: auto;
@@ -139,6 +146,9 @@ a{
     text-align: center;
     margin: 5% 0px;
     padding-bottom: 3%;
+/*     transition: ease-in;
+ *//*     animation: transitionIn 2s;
+ */
   
 }
 .project-title p{
@@ -161,6 +171,7 @@ a{
 
 }
 .__links{
+    margin-top: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -209,6 +220,9 @@ a{
     z-index: 10;
 }
 
+.project-title {
+   padding: 0;
+}
 .project-title h3{
     font-size: 1.3em;
     font-weight: lighter;
