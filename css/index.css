@@ -12,7 +12,7 @@ body html{
     padding: 0;
     box-sizing: border-box;
     position: relative;
-   overflow:hidden;
+   overflow-x:hidden;
     
 }
 html {
@@ -63,7 +63,7 @@ a{
     list-style: none;
 }
 .__nav ul li{
-    padding: 15px 30px;
+    padding: 15px 20px;
     font-size: 12px;
     margin: 0 1.5em;
 }
@@ -78,7 +78,7 @@ a{
     animation: transitionIn 2s;
 }
 .__content div{
-    width: 100%;
+    max-width: 100%;
     grid-row: auto;
     align-items: center;
     justify-content: center;
@@ -242,6 +242,7 @@ a{
     max-height: 10%;
     padding: 13px 1em;
     font-size: 0.75em;
+    word-spacing: 0.1em;
     color: #787878;
     font-weight: lighter;
 }
@@ -279,8 +280,8 @@ button{
     max-width: 100%;
     height: auto;  
     text-align: left;
-    padding: 3% 5%;
-  
+    padding: 3% 3%;
+    max-width: 100%;
     margin: 5% 0px;
 
 }
@@ -307,7 +308,7 @@ button{
 .service-description p{
     letter-spacing: 0.0.5em;
     line-height: 2em;
-    font-size: 0.90em;
+    font-size: 0.8em;
     color: #8a8a8a;
     padding: 0.5em 0px;
     font-weight: lighter;
@@ -317,7 +318,7 @@ button{
 /* Design Tools & Web Technologies */
 .__toolscontainer{
     margin: 15% 0px;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
 
 }
@@ -327,6 +328,7 @@ button{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 
@@ -472,7 +474,30 @@ button{
     font-size: 0.8em;
     color: rgb(50, 50, 50, 0.85  );
 }
+/* XS SCREEN */
+@media only screen and (max-width: 490px){
+    .__content div h3{
+       font-size: 1em;
+    }
+    .__content div h1{
+       font-size: 1.7em;
+    }
+    .__content div h6{
+       font-size: 0.6em;
+    }
+    .__projectscontainer .__title{
+        text-align: center;
+    }
 
+    .tool-image img{
+      
+        height: 25%;
+        width: 5em;    
+       
+    }
+  
+   
+}
 /* SMALL SCREEN */
  @media only screen and (max-width: 640px){
   /*   body{
