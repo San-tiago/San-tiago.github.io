@@ -477,6 +477,38 @@ button{
 }
 /* XS SCREEN */
 @media only screen and (max-width: 490px){
+    .__nav{
+        display: none;
+    }
+    #mobile-nav{
+        position: fixed;
+        width: 100%;
+        z-index: 30;
+        background-color: white;
+    }
+    .mobile-links{ 
+        position: fixed;
+        margin-top: 10% ;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        padding-top: 3em;
+        flex-direction: column;
+        z-index: 20;
+        padding-left: 1em;
+    }
+    .mobile-links a{
+        margin-top: 2%;
+    }
+    .mobile-linkshidden{
+        display: none;
+    }
+    
+   
+    .mobile-menu-button{
+        width: 2em;
+        height: 2em;
+    }
     .__content div h3{
        font-size: 1em;
     }
