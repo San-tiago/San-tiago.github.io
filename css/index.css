@@ -73,6 +73,13 @@ a{
 .mobile-linkshidden{
     display: none;
 }
+#mobile-links a{
+    padding: 0px 0.7em;
+}
+#mobile-links a:hover{
+    background-color: #ababab;
+    color:white;
+}
 .mobile-nav{
     display: none;
 }
