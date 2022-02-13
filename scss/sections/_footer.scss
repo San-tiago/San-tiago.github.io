@@ -1,0 +1,21 @@
+@forward '../fonts/fonts';
+@forward '../utilities/variables';
+
+@use '../utilities/variables';
+@use '../fonts/fonts';
+
+@mixin footer {
+  max-width: 100%;
+  margin: 5em 0;
+  display: flex;
+  justify-content: center;
+
+  .icons {
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: variables.$primary-color;
+      margin: 0 1em;
+    }
+  }
+}

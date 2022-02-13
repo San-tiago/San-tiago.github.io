@@ -75,6 +75,7 @@ a{
 }
 #mobile-links a{
     padding: 0px 0.7em;
+    font-size: 0.9em;
 }
 #mobile-links a:hover{
     background-color: #ababab;

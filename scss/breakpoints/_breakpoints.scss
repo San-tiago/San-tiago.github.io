@@ -1,0 +1,195 @@
+@use '../utilities/variables';
+
+@mixin responsive($media) {
+  @if $media == small {
+    @media only screen and (min-width: 500px) and (max-width: 640px) {
+      padding: 0 2em;
+      .mid-nav {
+        .icons-container {
+          width: 50%;
+          background-color: red;
+        }
+      }
+      .projects {
+        .categories-container {
+          a {
+            font-size: 0.7em;
+            margin: 0 0.8em;
+          }
+        }
+      }
+    }
+  } @else if $media == medium {
+    @media only screen and (min-width: 641px) and (max-width: 900px) {
+      padding: 0 2.5em;
+      .mid-nav {
+        .icons-container {
+          width: 40%;
+          background-color: green;
+        }
+      }
+      .projects {
+        .categories-container {
+          margin-top: 2em;
+
+          a {
+            font-size: 0.8em;
+            margin: 0 0.9em;
+          }
+        }
+      }
+      .about-container {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        .img-container {
+          max-width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1em 0;
+
+          img {
+            max-height: 80%;
+          }
+          .about-text-content {
+            .text-container {
+              p {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .about-text-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .techs-container {
+        grid-template-columns: repeat(6, 65px);
+      }
+      textarea {
+        height: 100px;
+      }
+      footer {
+        justify-content: start;
+      }
+    }
+  } @else if $media == large {
+    @media only screen and (min-width: 901px) and (max-width: 1400px) {
+      padding: 0 4em;
+      .content {
+        p {
+          font-size: 0.9em;
+        }
+        h3 {
+          font-size: 3em;
+        }
+      }
+      .side-nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        .side-links {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+
+          a {
+            font-size: 0.9em;
+          }
+        }
+      }
+      .mid-nav {
+        display: none;
+      }
+      .projects-title-container {
+        h3 {
+          font-size: 1.2em;
+        }
+        p {
+          font-size: 0.8em;
+          padding: 0.5em 0;
+        }
+      }
+
+      .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.2em;
+        padding-right: 10em;
+      }
+      .projects {
+        .categories-container {
+          margin-top: 2em;
+
+          a {
+            font-size: 0.8em;
+            margin: 0 0.9em;
+          }
+        }
+      }
+      .about-container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        .img-container {
+          max-width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          padding: 0em 0;
+
+          img {
+            max-height: 80%;
+          }
+        }
+      }
+      .about-text-content {
+        display: flex;
+        align-items: center;
+        .text-container {
+          max-width: 70%;
+          padding: 1em 2em;
+          h4 {
+            font-size: 1.2em;
+          }
+          p {
+            line-height: 2em;
+            font-size: 0.8em;
+          }
+          button {
+            font-size: 0.7em;
+          }
+        }
+      }
+      .tech-container {
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .techs-container {
+          margin: 1em 0;
+          grid-template-columns: repeat(4, 65px);
+          grid-row-gap: 1.4em;
+        }
+      }
+
+      .contact-form {
+        width: 55%;
+        margin: 10em 0;
+        form button {
+          padding: 0.8em;
+          font-size: 0.7em;
+        }
+      }
+      footer {
+        justify-content: start;
+        margin: 1em 0;
+      }
+    }
+  }
+}

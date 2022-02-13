@@ -1,0 +1,14 @@
+@use '../utilities/variables';
+
+@mixin button {
+  border-style: solid variables.$primary-color;
+  border-width: 0.3px;
+  background-color: rgb(250, 250, 250);
+  padding: 1.2em 1.4em;
+  border-radius: 5px;
+  font-size: 0.6em;
+  margin-top: 1.2em;
+  color: variables.$primary-color;
+  font-weight: bold;
+  cursor: pointer;
+}

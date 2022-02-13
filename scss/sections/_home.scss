@@ -1,0 +1,13 @@
+@forward '../fonts/fonts';
+@forward '../utilities/variables';
+@forward '../components/button';
+@forward '../components/midnav';
+
+@mixin home {
+  max-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  position: relative;
+  z-index: 10;
+}

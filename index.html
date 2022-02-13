@@ -1,419 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Portfilio</title>
-    <link rel="stylesheet" href="./css/index.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-</head>
-<body>
-    <div class="__container" id="__container">
-        <nav class="__nav">
-            
-            <ul>
-                <li><a href="#__container">Home</a></li>
-                <li><a href="#__projects">Projects</a></li>
-                <li><a href="#__about">About</a></li>
-                <li><a href="#__footer">Contacts</a></li>
-            </ul>
-        </nav>
-        <div id="mobile-nav" class="mobile-nav">
-            <button class="mobile-menu-button" onclick="toggle()" style="border:none; background-color: transparent;">
-                <svg  xmlns="http://www.w3.org/2000/svg" style="width: 2em; height:2em;" fill="none" viewBox="0 0 24 24" stroke="black">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- FIRST SECTION -->
+    <div class="home">
+      <div class="home-content-container">
+        <div class="content">
+          <div>
+            <p class="hello">HELLO, I'M JAMES ATANANTE</p>
+            <h3>FRONT-END</h3>
+            <h3>DEVELOPER</h3>
+          </div>
+          <div>
+            <button class="cv-btn">DOWNLOAD CV</button>
+          </div>
         </div>
-        <div id="mobile-links" class="mobile-linkshidden">
-          
-            <a href="#__container">Home</a>
-            <a href="#__projects">Projects</a>
-            <a href="#__about">About</a>
-            <a href="#__footer">Contacts</a>
+      </div>
+
+      <div class="side-nav">
+        <div class="side-links">
+          <a href="" class="home-nav active-link">Home</a>
+          <a href="" class="projects-nav">Projects</a>
+          <a href="" class="about-nav">About</a>
+          <a href="" class="contact-nav">Contact</a>
         </div>
-        <div class="__content">
-            <div>
-                <h3>MINIMALIST</h3>
-                <h1>PORTFOLIO</h1>  
-                <h6>I'M ASPIRING FRONTEND DEVELOPER</h6>
-            </div>
+      </div>
+
+      <div class="mid-nav">
+        <div class="icons-container">
+          <div>
+            <a href=""><i class="fas fa-home"></i></a>
+            <a href=""><i class="fas fa-th-large"></i></a>
+            <a href=""><i class="fas fa-user"></i></a>
+            <a href=""><i class="fas fa-address-card"></i></a>
+          </div>
         </div>
-
-        <!-- Projects -->
-        <div class="__projectscontainer" id="__projects">
-            <div class="__title"><h2>MY PROJECTS</h2></div>
-
-            <div class="__projects">
-                <div class="__project">
-                    <div class="__projectimage">
-                        <div>
-                            <img src="./images/LO-GO.png" alt="">
-                         <!--    <div class="overlay">
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-figma"></i></a> </div>
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> </div>
-                              
-                            </div> -->
-                        </div>
-                      
-                    </div>
-                    <div class="project-title">
-                        <h3>Lo-Go</h3>
-                    </div>
-                    <div class="project-description">
-                        <p>LO-GO is a responsive eCommerce frontend website. It has a home page, login modal, registration modal, specific detail page product. It was made with HTML and Tailwind CSS Framework.</p>
-                    </div>
-                    <div class="__links">
-                        <a href="https://www.figma.com/proto/PdSwxr5G28NYb3IzpYaMLz/Untitled?node-id=1%3A2&scaling=scale-down-width&page-id=0%3A1" target="_blank"><i class="fab fa-figma"></i></a> 
-                        <a href="https://lo-go.netlify.app/" target="_blank"><button>Visit Website</button></a>
-                        <a href="https://github.com/San-tiago/LO-GO" target="_blank"><i class="fab fa-github"></i></a> 
-                    </div>
-                 </div>
-                
-                
-                <div class="__project">
-                    <div class="__projectimage">
-                        <div>
-                            <img src="./images/purniture.png" alt="">
-                         <!--    <div class="overlay">
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-figma"></i></a> </div>
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> </div>
-                              
-                            </div> -->
-                        </div>
-                      
-                    </div>
-                    <div class="project-title">
-                        <h3>Purniture</h3>
-                    </div>
-                    <div class="project-description">
-                        <p>Furniture is a landing page website of furniture products where users can browse products. It is also responsive and was made with HTML and Tailwind CSS framework.</p>
-                    </div>
-                    <div class="__links">
-                        <a href="https://www.figma.com/proto/DPse9iqV49iILtmwrRhyIQ/Untitled?node-id=1%3A2&scaling=scale-down-width" target="_blank"><i class="fab fa-figma"></i></a> 
-                        <a href="https://purniture.netlify.app/" target="_blank"><button>Visit Website</button></a>
-                        <a href="https://github.com/San-tiago/Purniture" target="_blank"><i class="fab fa-github"></i></a> 
-                    </div>
-                 </div>
-
-                 <div class="__project">
-                    <div class="__projectimage">
-                        <div>
-                            <img src="./images/sopienzolfe.png" alt="">
-                         <!--    <div class="overlay">
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-figma"></i></a> </div>
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> </div>
-                              
-                            </div> -->
-                        </div>
-                      
-                    </div>
-                    <div class="project-title">
-                        <h3>Sopienzolfe</h3>
-                    </div>
-                    <div class="project-description">
-                        <p>Sopienzolfe is our thesis project. It is an online ordering system for a business, it was made with Template (HTML, Bootstrap, Jquery) and Laravel framework.</p>
-                    </div>
-                    <div class="__links">
-                        <i class="fab fa-figma" style="color:rgb(222, 222, 222)"></i>
-                        <a href="http://sopienzolfe.com/" target="_blank"><button>Visit Website</button></a>
-                        <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> 
-                    </div>
-                </div>
-               
-                 <div class="__project">
-                    <div class="__projectimage">
-                        <div>
-                            <img src="./images/petmart.png" alt="">
-                         <!--    <div class="overlay">
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-figma"></i></a> </div>
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> </div>
-                              
-                            </div> -->
-                        </div>
-                      
-                    </div>
-                    <div class="project-title">
-                        <h3>Pet Mart</h3>
-                    </div>
-                    <div class="project-description">
-                        <p>Petmart is also a landing page website only where users can browse products for their pets. It is also responsive and was made with HTML and Tailwind CSS framework.</p>
-                    </div>
-                    <div class="__links">
-                        <a href="https://www.figma.com/proto/NBX4npj5iEYyhvaTRcPmtx/PetMart?node-id=1%3A2&scaling=scale-down-width" target="_blank"><i class="fab fa-figma"></i></a> 
-                        <a href="https://petmart.netlify.app/" target="_blank"><button>Visit Website</button></a>
-                        <a href="https://github.com/San-tiago/PetMart-TC" target="_blank"><i class="fab fa-github"></i></a> 
-                    </div>
-                 </div>
-                 <div class="__project">
-                    <div class="__projectimage">
-                        <div>
-                            <img src="./images/BIKESHOP.png" alt="">
-                         <!--    <div class="overlay">
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-figma"></i></a> </div>
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> </div>
-                              
-                            </div> -->
-                        </div>
-                      
-                    </div>
-                    <div class="project-title">
-                        <h3>Bike Shop</h3>
-                    </div>
-                    <div class="project-description">
-                        <p>Petmart is also a landing page website only where users can browse products for their pets. It is also responsive and was made with HTML and Tailwind CSS framework.</p>
-                    </div>
-                    <div class="__links">
-                        <a href="https://www.figma.com/proto/ln02ts4X4bKQSYGZ43YLwV/Untitled?node-id=1%3A25&scaling=scale-down-width" target="_blank"><i class="fab fa-figma"></i></a> 
-                        <!-- <a href="https://petmart.netlify.app/" target="_blank"> --><button>On Going</button><!-- </a> -->
-                        <i class="fab fa-github" style="color:rgb(222, 222, 222)"></i>
-                    </div>
-                 </div>
-                 <div class="__project" id="not_done">
-                    <div class="__projectimage">
-                        <div>
-                            <img src="./images/petmart.png" alt="">
-                         <!--    <div class="overlay">
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-figma"></i></a> </div>
-                                <div> <a href="sopienzolfe.com" target="_blank"><i class="fab fa-github"></i></a> </div>
-                              
-                            </div> -->
-                        </div>
-                      
-                    </div>
-                    <div class="project-title">
-                        <h3>Pet Mart</h3>
-                    </div>
-                    <div class="project-description">
-                        <p>Petmart is also a landing page website only where users can browse products for their pets. It is also responsive and was made with HTML and Tailwind CSS framework.</p>
-                    </div>
-                    <div class="__links">
-                        <a href="https://www.figma.com/proto/NBX4npj5iEYyhvaTRcPmtx/PetMart?node-id=1%3A2&scaling=scale-down-width" target="_blank"><i class="fab fa-figma"></i></a> 
-                        <a href="https://petmart.netlify.app/" target="_blank"><button>Visit Website</button></a>
-                        <a href="https://github.com/San-tiago/PetMart-TC" target="_blank"><i class="fab fa-github"></i></a> 
-                    </div>
-                 </div>
-
-            
-               
-        </div>
-        <!-- EndProjects -->
-
-
-        <!-- Services -->
-        <div class="__servicesscontainer">
-            <div class="__title"><h2>SERVICES</h2></div>
-            <div class="services">
-                <div class="service-wrapper">
-                    <div class="project-title">
-                        <h3>Web Design</h3>
-                    </div>
-                    <div class="service-description">
-                        <p>Web design is one of my passion and love doing when it comes to web development. I value making the website simple, aesthetic, consistent user-friendly, 
-                            good color combinations to help users or visitors to guide to take actions in a website.
-                        </p>
-                    </div>
-                </div>
-                <div  class="image-wrapper">
-                    <img src="./images/webdesign.png" alt="">
-                </div>
-            </div>
-            <div class="services">
-                <div class="service-wrapper">
-                    <div class="project-title">
-                        <h3>Frontend Development</h3>
-                    </div>
-                    <div class="service-description">
-                        <p>
-                            I also doing Frontend Development since it is connected to web designing. I making my web design into a real web page 
-                            and it is very satisfying for me to see my design and responsive to all devices so that users can see it too.
-                        </p>
-                    </div>
-                </div>
-                <div class="image-wrapper">
-                    <img src="./images/hire-front-end-developer-indylogix-solutions.png" alt="">
-                </div>
-            </div>
-            <div class="services">
-                <div class="service-wrapper">
-                    <div class="project-title">
-                        <h3>Backend Development</h3>
-                    </div>
-                    <div class="service-description">
-                        <p>I also have basic knowledge of backend development specifically PHP and Laravel framework and MySQL for the database because of our thesis and still I improving my skill in this field.
-                        </p>
-                    </div>
-                </div>
-                <div  class="image-wrapper">
-                    <img src="./images/backend.png" alt="">
-                </div>
-            </div>
-        </div>
-        <!-- End Services -->
-
-
-
-
-        <!--Design Tools & Web Tech  -->
-        <div class="__toolscontainer">
-            <div class="__title"><h2>Design Tools & Web Technologies</h2></div>
-            <div class="__toolswrapper">
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/figma-1.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>Figma</h5>
-                        <p>I’m using Figma for my web design projects because, it is free and easy to use and test using prototyping </p>
-
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/html5.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>HTML5</h5>
-                        <p>HyperText Markup Language for the structure of a web page and its content.</p>
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/css-5.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>CSS 3</h5>
-                        <p>Cascading Style Sheet for designing and layout of the contents(flexbox, grid, position etc)</p>
-                 
-                    </div>
-                </div>
-               
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/logo-javascript.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>Javascript</h5>
-                        <p>I also have basic knowledge in javascript (variables, arrays,loop, objects ,DOM, Functions, Events)</p>
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/tailwind.png" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>Tailwind CSS</h5>
-                        <p>I’ve used most of my projects using Tailwind CSS framework because it is easy for me to do  layout & responsive design.
-                        </p>
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/git-icon.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>Git</h5>
-                        <p>A very important tool  for tracking of my projects, versioning control, and code management.</p>
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/Bootstrap_(front-end_framework)-Logo.wine.png" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>Bootstrap</h5>
-                        <p>Bootstrap is my second option in CSS Frameworks like Tailwind CSS it is easy to use for me.</p>
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/laravel-1.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>Laravel</h5>
-                        <p>In our thesis project, I’ve used Laravel PHP Framework because I have basic knowledge in PHP and it is also easy to use.</p>
-                 
-                    </div>
-                </div>
-                <div class="tools">
-                    <div class="tool-image">
-                        <img src="./images/mysql-5.svg" alt="">
-                    </div>
-                    <div class="tools-description">
-                        <h5>MySQL</h5>
-                        <p>Im using MySQL for database of my project, since in our school taught this type of database.</p>
-                 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Design Tools & Web Tech  -->
-
-        <!-- About me  -->
-            <div class="aboutme-section" id="__about">
-                <div class="aboutme-image-container">
-                    
-                </div>
-                <div class="headline">
-                    <div class="aboutme"><h2>ABOUT ME</h2></div>
-                    <p>
-                        My name is James Atanante, I’m a self-taught web designer and web developer. Currently a 4th-year college student at Cavite State University Carmona taking a Bachelor of Science in Information Technology.
-                    </p>
-                    <p>
-                        I love designing and developing websites and am looking for opportunities to work. The sample projects 
-                        in this portfolio show my passion for web design and web development 
-                    </p>
-                    <a href="#__footer"><button>Contact Me</button></a>
-                </div>
-            </div>
-        <!-- End About me  -->
-        <!-- Footer -->
-        <div class="__footer" id="__footer">
-            <div class="__logos">
-                <div class="__icons">
-                   <a href="https://github.com/San-tiago" target="_blank"><i class="fab fa-github"></i></a>
-                   <a href="https://www.facebook.com/james.etnanata/" target="_blank"><i class="fab fa-facebook"></i></a>
-                   <a href=""><i class="fab fa-linkedin"></i></a>
-                   
-                </div>
-                <div class="__email">
-                    <p>jeymsatanante@gmail.com</p>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer -->
+      </div>
     </div>
+    <!--END FIRST SECTION -->
 
-    <script>
-        const el = document.querySelector('.__projects');
-// get scroll position in px
-console.log(el.scrollLeft, el.scrollTop);
-    </script>
-    <script>
-        const btn = document.querySelector('button.mobile-menu-button');
-        const menu = document.getElementById('mobile-links');
+    <!-- SECOND SECTION -->
+    <div class="projects">
+      <div class="projects-title-container">
+        <h3>RECENT PROJECTS</h3>
+        <p>MY PORTFOLIO</p>
+      </div>
 
-        function toggle(){
-        if(menu.className == "mobile-links"){
-            menu.className = "mobile-linkshidden";
-        }
-        else{
-            menu.className = "mobile-links"
-        }
-    }
+      <div class="categories">
+        <div class="categories-container work__filters">
+          <div>
+            <span  class="work__item active-category" data-filter="all">All</span>
+          </div>
+          <div>
+            <span  class="work__item"  data-filter=".webDesign">Web Design</span>
+          </div>
+          <div>
+            <span  class="work__item"  data-filter=".landingPage">Landing Page</span>
+          </div>
+          <div>
+            <span  class="work__item"  data-filter=".webApps">Web Apps</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-container work__container container">
+        <div class="project-container project-1 mix landingPage work__card">
+          <div class="project-image">
+            <img src="./img/project_1.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h5>LO-GO</h5>
+            <a href="http://www.jamesatanante.me/LO-GO/">Demo</a>
+          </div>
+        </div>
+
+        <div class="project-container project-2 mix landingPage work__card">
+          <div class="project-image">
+            <img src="./img/project_2.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h5>Purniture</h5>
+            <a href="">Demo</a>
+          </div>
+        </div>
+        <div class="project-container project-3 mix webApps work__card">
+          <div class="project-image">
+            <img src="./img/project_3.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h5>Sopienzolfe</h5>
+            <a href="">Demo</a>
+          </div>
+        </div>
+        <div class="project-container project-4 mix webDesign work__card">
+          <div class="project-image">
+            <img src="./img/project_4.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h5>Pet Mart</h5>
+            <a href="">Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END SECOND SECTION -->
+
+    <!-- ABOUT -->
+    <div class="about-container">
+      <div class="img-container">
+        <img src="./img/men.jpg" alt="" />
+      </div>
+      <div class="about-text-content">
+        <div class="text-container">
+          <h4>ABOUT ME</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <button>CONTACT ME</button>
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- TOOLS -->
+    <div class="tech-container">
+      <div class="stack-container frontend">
+        <div class="tech-title">
+          <h4>FRONT-END</h4>
+        </div>
+        <div class="techs-container">
+          <div class="techs">
+            <img src="./img/html5.svg" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/css-5.svg" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/logo-javascript.svg" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/sass.png" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/tailwind.png" alt="" />
+          </div>
+          <div class="techs">
+            <img
+              src="./img/Bootstrap_(front-end_framework)-Logo.wine.png"
+              alt=""
+            />
+          </div>
+          <div class="techs">
+            <img src="./img/react-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-container backend">
+        <div class="tech-title">
+          <h4>BACKEND & DATABASE</h4>
+        </div>
+        <div class="techs-container">
+          <div class="techs">
+            <img src="./img/php-1.svg" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/laravel-1.svg" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/mysql-5.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-container tools">
+        <div class="tech-title">
+          <h4>TOOLS</h4>
+        </div>
+        <div class="techs-container">
+          <div class="techs">
+            <img src="./img/git-icon.svg" alt="" />
+          </div>
+          <div class="techs">
+            <img src="./img/figma-1.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END TOOLS -->
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+      <h3>CONTACT FORM</h3>
+      <div>
+        <form
+        action="https://formspree.io/f/xzborboo"
+        method="POST"
+      >
+          <div class="input-container">
+            <label for="">Name</label>
+            <input type="text" name="name"/>
+          </div>
+          <div class="input-container">
+            <label for="">Email</label>
+            <input type="text" name="email"/>
+          </div>
+          <div class="input-container">
+            <label for="">Subject</label>
+            <input type="text" name="subject"/>
+          </div>
+          <div class="input-container message">
+            <label for="">Message</label>
+            <textarea name="message id=""></textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- END CONTACT FORM -->
+
+      <footer>
+        <div class="footer-container">
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
     
-       
+    <script src="./js/mixitup.min.js"> 
+ 
     </script>
-</body>
+
+    <script>
+
+    let mixerPortfolio = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 300
+    }});
+
+    const linkWork = document.querySelectorAll('.work__item')
+
+    function activeWork(){
+      linkWork.forEach(l => l.classList.remove('active-category'))
+      this.classList.add('active-category')
+    }
+
+    linkWork.forEach(l => l.addEventListener('click', activeWork))
+
+      // Changing the defaults
+      window.sr = ScrollReveal();
+
+      // Customizing a reveal set
+      sr.reveal('.hello', {
+        origin: 'bottom',
+        distance: '10px',
+        duration: 500,
+      });
+      sr.reveal('.content h3', {
+        origin: 'bottom',
+        distance: '5px',
+        duration: 1000,
+        delay: 500,
+      });
+      sr.reveal('.cv-btn', {
+        origin: 'top',
+        distance: '2px',
+        duration: 1000,
+        delay: 600,
+      });
+      sr.reveal('.project-1', {
+        origin: 'bottom',
+        distance: '5px',
+        duration: 1200,
+      });
+      sr.reveal('.project-2', {
+        origin: 'bottom',
+        distance: '5px',
+        duration: 1200,
+        delay: 300,
+      });
+      sr.reveal('.project-3', {
+        origin: 'bottom',
+        distance: '5px',
+        duration: 1200,
+        delay: 500,
+      });
+      sr.reveal('.project-4', {
+        origin: 'bottom',
+        distance: '5px',
+        duration: 1200,
+        delay: 500,
+      });
+      sr.reveal('.mid-nav', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1200,
+        delay: 900,
+      });
+      sr.reveal('.home-nav', {
+        origin: 'right',
+        distance: '50px',
+        duration: 1200,
+        delay: 1000,
+      });
+      sr.reveal('.home-nav', {
+        origin: 'right',
+        distance: '50px',
+        duration: 1200,
+        delay: 1000,
+      });
+      sr.reveal('.projects-nav', {
+        origin: 'right',
+        distance: '50px',
+        duration: 1200,
+        delay: 1200,
+      });
+      sr.reveal('.about-nav', {
+        origin: 'right',
+        distance: '50px',
+        duration: 1200,
+        delay: 1400,
+      });
+      sr.reveal('.contact-nav', {
+        origin: 'right',
+        distance: '50px',
+        duration: 1200,
+        delay: 1400,
+      });
+
+      sr.reveal('.img-container', {
+        origin: 'bottom',
+        distance: '10px',
+        duration: 1000,
+      });
+      sr.reveal('.about-text-content', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+        delay: 500,
+      });
+
+      sr.reveal('.frontend', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+      });
+      sr.reveal('.backend', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+        delay: 800,
+      });
+      sr.reveal('.tools', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+        delay: 1100,
+      });
+      sr.reveal('.contact-form', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+      });
+      sr.reveal('.footer-container', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+      });
+    </script>
+
+   
+  </body>
 </html>
