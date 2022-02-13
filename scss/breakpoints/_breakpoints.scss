@@ -12,9 +12,10 @@
       }
       .projects {
         .categories-container {
-          a {
-            font-size: 0.7em;
-            margin: 0 0.8em;
+          .category-text-container {
+            span {
+              margin: 0 0.8em;
+            }
           }
         }
       }
@@ -32,9 +33,11 @@
         .categories-container {
           margin-top: 2em;
 
-          a {
-            font-size: 0.8em;
-            margin: 0 0.9em;
+          .category-text-container {
+            span {
+              font-size: 0.7em;
+              margin: 0 0.9em;
+            }
           }
         }
       }
@@ -126,9 +129,11 @@
         .categories-container {
           margin-top: 2em;
 
-          a {
-            font-size: 0.8em;
-            margin: 0 0.9em;
+          .category-text-container {
+            span {
+              font-size: 0.8em;
+              margin: 0 0.9em;
+            }
           }
         }
       }

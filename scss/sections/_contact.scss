@@ -6,7 +6,7 @@
 @use '../components/button';
 
 @mixin contact-form {
-  margin: 4em 0;
+  margin: 2.5em 0;
   width: 100%;
   padding: 1em 0;
   h3 {
@@ -32,6 +32,9 @@
       border: 1px solid variables.$primary-color;
       padding: 0.8em;
       margin: 0.5em 0;
+      font-family: fonts.$poppins;
+      color: variables.$primary-color;
+      border-radius: 5px;
     }
     textarea {
       outline: none;
@@ -40,6 +43,9 @@
       padding: 1em;
       margin: 0.5em 0;
       max-width: 100%;
+      font-family: fonts.$poppins;
+      color: variables.$primary-color;
+      border-radius: 5px;
     }
   }
   form button {
@@ -55,6 +61,7 @@
     letter-spacing: 5px;
     font-family: fonts.$poppins;
     cursor: pointer;
+    border-radius: 5px;
   }
   form button:hover {
     background-color: variables.$dark-color;

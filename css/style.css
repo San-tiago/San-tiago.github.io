@@ -5,8 +5,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding: 0 2em;
+  padding: 0 1.6em;
   background-color: #fcfcfc;
 }
 @media only screen and (min-width: 500px) and (max-width: 640px) {
@@ -17,8 +21,7 @@ body {
     width: 50%;
     background-color: red;
   }
-  body .projects .categories-container a {
-    font-size: 0.7em;
+  body .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -33,8 +36,8 @@ body {
   body .projects .categories-container {
     margin-top: 2em;
   }
-  body .projects .categories-container a {
-    font-size: 0.8em;
+  body .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   body .about-container {
@@ -112,7 +115,7 @@ body {
   body .projects .categories-container {
     margin-top: 2em;
   }
-  body .projects .categories-container a {
+  body .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -277,8 +280,7 @@ a {
     width: 50%;
     background-color: red;
   }
-  .home .projects .categories-container a {
-    font-size: 0.7em;
+  .home .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -293,8 +295,8 @@ a {
   .home .projects .categories-container {
     margin-top: 2em;
   }
-  .home .projects .categories-container a {
-    font-size: 0.8em;
+  .home .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   .home .about-container {
@@ -372,7 +374,7 @@ a {
   .home .projects .categories-container {
     margin-top: 2em;
   }
-  .home .projects .categories-container a {
+  .home .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -460,8 +462,7 @@ a {
     width: 50%;
     background-color: red;
   }
-  .projects .projects .categories-container a {
-    font-size: 0.7em;
+  .projects .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -476,8 +477,8 @@ a {
   .projects .projects .categories-container {
     margin-top: 2em;
   }
-  .projects .projects .categories-container a {
-    font-size: 0.8em;
+  .projects .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   .projects .about-container {
@@ -555,7 +556,7 @@ a {
   .projects .projects .categories-container {
     margin-top: 2em;
   }
-  .projects .projects .categories-container a {
+  .projects .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -623,21 +624,35 @@ a {
 }
 .categories .categories-container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 1.3em;
+  height: 50px;
 }
-.categories .categories-container span {
-  font-size: 0.8em;
+.categories .categories-container .category-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories .categories-container .category-text-container span {
+  font-size: 0.6em;
   color: #505050;
   font-family: "Poppins";
   text-decoration: none;
-  margin: 0 0.7em;
+  margin: 0.5em;
+  padding: 1em 0;
+  font-weight: 300;
   cursor: pointer;
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 4px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.categories .categories-container .active-category {
+.categories .categories-container .category-text-container .active-category {
   background-color: #505050;
   color: white;
   border-radius: 20px;
   padding: 4px 20px;
+  font-weight: 500;
 }
 
 .projects-container {
@@ -646,8 +661,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
-  margin-top: 1em;
-  padding: 1em 0;
 }
 .projects-container .project-container {
   overflow: hidden;
@@ -697,8 +710,7 @@ a {
     width: 50%;
     background-color: red;
   }
-  .about-container .projects .categories-container a {
-    font-size: 0.7em;
+  .about-container .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -713,8 +725,8 @@ a {
   .about-container .projects .categories-container {
     margin-top: 2em;
   }
-  .about-container .projects .categories-container a {
-    font-size: 0.8em;
+  .about-container .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   .about-container .about-container {
@@ -792,7 +804,7 @@ a {
   .about-container .projects .categories-container {
     margin-top: 2em;
   }
-  .about-container .projects .categories-container a {
+  .about-container .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -943,8 +955,7 @@ a {
     width: 50%;
     background-color: red;
   }
-  .tech-container .projects .categories-container a {
-    font-size: 0.7em;
+  .tech-container .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -959,8 +970,8 @@ a {
   .tech-container .projects .categories-container {
     margin-top: 2em;
   }
-  .tech-container .projects .categories-container a {
-    font-size: 0.8em;
+  .tech-container .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   .tech-container .about-container {
@@ -1038,7 +1049,7 @@ a {
   .tech-container .projects .categories-container {
     margin-top: 2em;
   }
-  .tech-container .projects .categories-container a {
+  .tech-container .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -1101,7 +1112,7 @@ a {
 }
 
 .contact-form {
-  margin: 4em 0;
+  margin: 2.5em 0;
   width: 100%;
   padding: 1em 0;
 }
@@ -1128,6 +1139,9 @@ a {
   border: 1px solid #505050;
   padding: 0.8em;
   margin: 0.5em 0;
+  font-family: "Poppins";
+  color: #505050;
+  border-radius: 5px;
 }
 .contact-form .input-container textarea {
   outline: none;
@@ -1136,6 +1150,9 @@ a {
   padding: 1em;
   margin: 0.5em 0;
   max-width: 100%;
+  font-family: "Poppins";
+  color: #505050;
+  border-radius: 5px;
 }
 .contact-form form button {
   font-size: 0.9em;
@@ -1150,6 +1167,7 @@ a {
   letter-spacing: 5px;
   font-family: "Poppins";
   cursor: pointer;
+  border-radius: 5px;
 }
 .contact-form form button:hover {
   background-color: #282828;
@@ -1163,8 +1181,7 @@ a {
     width: 50%;
     background-color: red;
   }
-  .contact-form .projects .categories-container a {
-    font-size: 0.7em;
+  .contact-form .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -1179,8 +1196,8 @@ a {
   .contact-form .projects .categories-container {
     margin-top: 2em;
   }
-  .contact-form .projects .categories-container a {
-    font-size: 0.8em;
+  .contact-form .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   .contact-form .about-container {
@@ -1258,7 +1275,7 @@ a {
   .contact-form .projects .categories-container {
     margin-top: 2em;
   }
-  .contact-form .projects .categories-container a {
+  .contact-form .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -1331,6 +1348,10 @@ footer .icons svg {
   height: 35px;
   fill: #505050;
   margin: 0 1em;
+  cursor: pointer;
+}
+footer .icons:hover {
+  transform: scale(38px);
 }
 @media only screen and (min-width: 500px) and (max-width: 640px) {
   footer {
@@ -1340,8 +1361,7 @@ footer .icons svg {
     width: 50%;
     background-color: red;
   }
-  footer .projects .categories-container a {
-    font-size: 0.7em;
+  footer .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
   }
 }
@@ -1356,8 +1376,8 @@ footer .icons svg {
   footer .projects .categories-container {
     margin-top: 2em;
   }
-  footer .projects .categories-container a {
-    font-size: 0.8em;
+  footer .projects .categories-container .category-text-container span {
+    font-size: 0.7em;
     margin: 0 0.9em;
   }
   footer .about-container {
@@ -1435,7 +1455,7 @@ footer .icons svg {
   footer .projects .categories-container {
     margin-top: 2em;
   }
-  footer .projects .categories-container a {
+  footer .projects .categories-container .category-text-container span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }

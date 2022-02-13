@@ -16,6 +16,10 @@
       height: 35px;
       fill: variables.$primary-color;
       margin: 0 1em;
+      cursor: pointer;
     }
+  }
+  .icons:hover {
+    transform: scale(38px);
   }
 }

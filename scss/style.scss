@@ -12,8 +12,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  padding: 0 2em;
+  padding: 0 1.6em;
   @include breakpoints.responsive(small);
   @include breakpoints.responsive(medium);
   @include breakpoints.responsive(large);
