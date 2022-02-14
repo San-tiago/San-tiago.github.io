@@ -44,20 +44,20 @@
         color: variables.$primary-color;
         font-family: fonts.$poppins;
         text-decoration: none;
+        text-align: center;
         margin: 0.5em;
-        padding: 1em 0;
         font-weight: 300;
         cursor: pointer;
         background-color: rgb(250, 250, 250);
         border-radius: 20px;
-        padding: 4px 20px;
+        padding: 4px 12px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       }
       .active-category {
         background-color: variables.$primary-color;
         color: white;
         border-radius: 20px;
-        padding: 4px 20px;
+        padding: 4px 12px;
         font-weight: 500;
       }
     }

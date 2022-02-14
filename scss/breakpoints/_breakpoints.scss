@@ -7,7 +7,6 @@
       .mid-nav {
         .icons-container {
           width: 50%;
-          background-color: red;
         }
       }
       .projects {
@@ -26,7 +25,6 @@
       .mid-nav {
         .icons-container {
           width: 40%;
-          background-color: green;
         }
       }
       .projects {
@@ -82,7 +80,7 @@
       }
     }
   } @else if $media == large {
-    @media only screen and (min-width: 901px) and (max-width: 1400px) {
+    @media only screen and (min-width: 901px) {
       padding: 0 4em;
       .content {
         p {
@@ -124,6 +122,17 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1.2em;
         padding-right: 10em;
+        .project-container {
+          .project-title {
+            h5 {
+              font-size: 0.8em;
+              padding: 0.7em 0;
+            }
+            a {
+              font-size: 0.7em;
+            }
+          }
+        }
       }
       .projects {
         .categories-container {
@@ -137,6 +146,7 @@
           }
         }
       }
+
       .about-container {
         height: 100vh;
         display: grid;
@@ -194,6 +204,15 @@
       footer {
         justify-content: start;
         margin: 1em 0;
+      }
+    }
+  } @else if $media == xlarge {
+    @media only screen and (min-width: 1401px) and (max-width: 1600px) {
+      padding: 0 6em;
+
+      .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.4em;
       }
     }
   }

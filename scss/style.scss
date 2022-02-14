@@ -20,6 +20,7 @@ body {
   @include breakpoints.responsive(small);
   @include breakpoints.responsive(medium);
   @include breakpoints.responsive(large);
+  @include breakpoints.responsive(xlarge);
   background-color: rgb(252, 252, 252);
 }
 a {

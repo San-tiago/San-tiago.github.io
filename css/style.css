@@ -19,7 +19,6 @@ body {
   }
   body .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   body .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -31,7 +30,6 @@ body {
   }
   body .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   body .projects .categories-container {
     margin-top: 2em;
@@ -73,7 +71,7 @@ body {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   body {
     padding: 0 4em;
   }
@@ -111,6 +109,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  body .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  body .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   body .projects .categories-container {
     margin-top: 2em;
@@ -174,6 +179,15 @@ body {
   body footer {
     justify-content: start;
     margin: 1em 0;
+  }
+}
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  body {
+    padding: 0 6em;
+  }
+  body .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.4em;
   }
 }
 
@@ -278,7 +292,6 @@ a {
   }
   .home .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   .home .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -290,7 +303,6 @@ a {
   }
   .home .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   .home .projects .categories-container {
     margin-top: 2em;
@@ -332,7 +344,7 @@ a {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   .home {
     padding: 0 4em;
   }
@@ -370,6 +382,13 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  .home .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  .home .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   .home .projects .categories-container {
     margin-top: 2em;
@@ -460,7 +479,6 @@ a {
   }
   .projects .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   .projects .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -472,7 +490,6 @@ a {
   }
   .projects .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   .projects .projects .categories-container {
     margin-top: 2em;
@@ -514,7 +531,7 @@ a {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   .projects {
     padding: 0 4em;
   }
@@ -552,6 +569,13 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  .projects .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  .projects .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   .projects .projects .categories-container {
     margin-top: 2em;
@@ -638,20 +662,20 @@ a {
   color: #505050;
   font-family: "Poppins";
   text-decoration: none;
+  text-align: center;
   margin: 0.5em;
-  padding: 1em 0;
   font-weight: 300;
   cursor: pointer;
   background-color: #fafafa;
   border-radius: 20px;
-  padding: 4px 20px;
+  padding: 4px 12px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .categories .categories-container .category-text-container .active-category {
   background-color: #505050;
   color: white;
   border-radius: 20px;
-  padding: 4px 20px;
+  padding: 4px 12px;
   font-weight: 500;
 }
 
@@ -709,7 +733,6 @@ a {
   }
   .about-container .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   .about-container .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -721,7 +744,6 @@ a {
   }
   .about-container .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   .about-container .projects .categories-container {
     margin-top: 2em;
@@ -763,7 +785,7 @@ a {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   .about-container {
     padding: 0 4em;
   }
@@ -801,6 +823,13 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  .about-container .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  .about-container .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   .about-container .projects .categories-container {
     margin-top: 2em;
@@ -954,7 +983,6 @@ a {
   }
   .tech-container .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   .tech-container .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -966,7 +994,6 @@ a {
   }
   .tech-container .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   .tech-container .projects .categories-container {
     margin-top: 2em;
@@ -1008,7 +1035,7 @@ a {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   .tech-container {
     padding: 0 4em;
   }
@@ -1046,6 +1073,13 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  .tech-container .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  .tech-container .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   .tech-container .projects .categories-container {
     margin-top: 2em;
@@ -1180,7 +1214,6 @@ a {
   }
   .contact-form .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   .contact-form .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -1192,7 +1225,6 @@ a {
   }
   .contact-form .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   .contact-form .projects .categories-container {
     margin-top: 2em;
@@ -1234,7 +1266,7 @@ a {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   .contact-form {
     padding: 0 4em;
   }
@@ -1272,6 +1304,13 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  .contact-form .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  .contact-form .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   .contact-form .projects .categories-container {
     margin-top: 2em;
@@ -1342,7 +1381,7 @@ footer {
   max-width: 100%;
   margin: 5em 0;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 footer .icons svg {
   width: 35px;
@@ -1360,7 +1399,6 @@ footer .icons:hover {
   }
   footer .mid-nav .icons-container {
     width: 50%;
-    background-color: red;
   }
   footer .projects .categories-container .category-text-container span {
     margin: 0 0.8em;
@@ -1372,7 +1410,6 @@ footer .icons:hover {
   }
   footer .mid-nav .icons-container {
     width: 40%;
-    background-color: green;
   }
   footer .projects .categories-container {
     margin-top: 2em;
@@ -1414,7 +1451,7 @@ footer .icons:hover {
     justify-content: start;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) {
   footer {
     padding: 0 4em;
   }
@@ -1452,6 +1489,13 @@ footer .icons:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2em;
     padding-right: 10em;
+  }
+  footer .projects-container .project-container .project-title h5 {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+  }
+  footer .projects-container .project-container .project-title a {
+    font-size: 0.7em;
   }
   footer .projects .categories-container {
     margin-top: 2em;
