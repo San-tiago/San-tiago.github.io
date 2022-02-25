@@ -204,6 +204,18 @@
       footer {
         justify-content: start;
         margin: 1em 0;
+        .footer-container {
+          .email-container {
+            justify-content: start;
+            p {
+              padding: 0 1em;
+              font-size: 0.8em;
+            }
+          }
+          .icons {
+            justify-content: start;
+          }
+        }
       }
     }
   } @else if $media == xlarge {

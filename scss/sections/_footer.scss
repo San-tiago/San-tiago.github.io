@@ -7,19 +7,33 @@
 @mixin footer {
   max-width: 100%;
   margin: 5em 0;
-  display: flex;
-  justify-content: start;
-
-  .icons {
-    svg {
-      width: 35px;
-      height: 35px;
-      fill: variables.$primary-color;
-      margin: 0 1em;
-      cursor: pointer;
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .email-container {
+      padding: 1em 0;
+      display: flex;
+      justify-content: center;
+      p {
+        font-family: fonts.$poppins;
+        color: variables.$primary-color;
+        font-size: 0.7em;
+      }
     }
-  }
-  .icons:hover {
-    transform: scale(38px);
+    .icons {
+      display: flex;
+      justify-content: center;
+      svg {
+        width: 35px;
+        height: 35px;
+        fill: variables.$primary-color;
+        margin: 0 1em;
+        cursor: pointer;
+      }
+    }
+    .icons:hover {
+      transform: scale(38px);
+    }
   }
 }
