@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -180,6 +180,9 @@ body {
     justify-content: start;
     margin: 1em 0;
   }
+  body footer .footer-container {
+    flex-direction: row;
+  }
   body footer .footer-container .email-container {
     justify-content: start;
   }
@@ -194,6 +197,9 @@ body {
 @media only screen and (min-width: 1401px) and (max-width: 1600px) {
   body {
     padding: 0 6em;
+  }
+  body body {
+    display: none;
   }
   body .projects-container {
     grid-template-columns: repeat(3, 1fr);
@@ -237,14 +243,14 @@ a {
   max-width: 100%;
 }
 .home h3 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 2em;
   font-weight: normal;
   color: #505050;
   letter-spacing: 0.1em;
 }
 .home p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 0.6em;
   color: #505050;
   letter-spacing: 0.1em;
@@ -253,7 +259,7 @@ a {
 }
 .home .side-nav {
   display: none;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 300;
 }
 .home .side-nav a {
@@ -463,6 +469,9 @@ a {
     justify-content: start;
     margin: 1em 0;
   }
+  .home footer .footer-container {
+    flex-direction: row;
+  }
   .home footer .footer-container .email-container {
     justify-content: start;
   }
@@ -481,7 +490,7 @@ a {
 .projects .projects-title-container h3 {
   font-weight: bold;
   color: #505050;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   letter-spacing: 0.2em;
   font-size: 1em;
 }
@@ -489,7 +498,7 @@ a {
   font-weight: 500;
   font-size: 0.6em;
   color: #505050;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   letter-spacing: 0.5em;
   padding-left: 1em 0;
 }
@@ -533,7 +542,12 @@ a {
   .projects .about-container .img-container img {
     max-height: 80%;
   }
-  .projects .about-container .img-container .about-text-content .text-container p {
+  .projects
+    .about-container
+    .img-container
+    .about-text-content
+    .text-container
+    p {
     padding: 0;
   }
   .projects .about-text-content {
@@ -660,6 +674,9 @@ a {
     justify-content: start;
     margin: 1em 0;
   }
+  .projects footer .footer-container {
+    flex-direction: row;
+  }
   .projects footer .footer-container .email-container {
     justify-content: start;
   }
@@ -690,7 +707,7 @@ a {
 .categories .categories-container .category-text-container span {
   font-size: 0.6em;
   color: #505050;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   text-decoration: none;
   text-align: center;
   margin: 0.5em;
@@ -744,10 +761,10 @@ a {
 .projects-container .project-container .project-title h5 {
   font-size: 0.7em;
   color: #505050;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 .projects-container .project-container .project-title a {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #505050;
   font-size: 0.6em;
 }
@@ -764,7 +781,11 @@ a {
   .about-container .mid-nav .icons-container {
     width: 50%;
   }
-  .about-container .projects .categories-container .category-text-container span {
+  .about-container
+    .projects
+    .categories-container
+    .category-text-container
+    span {
     margin: 0 0.8em;
   }
 }
@@ -778,7 +799,11 @@ a {
   .about-container .projects .categories-container {
     margin-top: 2em;
   }
-  .about-container .projects .categories-container .category-text-container span {
+  .about-container
+    .projects
+    .categories-container
+    .category-text-container
+    span {
     font-size: 0.7em;
     margin: 0 0.9em;
   }
@@ -797,7 +822,12 @@ a {
   .about-container .about-container .img-container img {
     max-height: 80%;
   }
-  .about-container .about-container .img-container .about-text-content .text-container p {
+  .about-container
+    .about-container
+    .img-container
+    .about-text-content
+    .text-container
+    p {
     padding: 0;
   }
   .about-container .about-text-content {
@@ -864,7 +894,11 @@ a {
   .about-container .projects .categories-container {
     margin-top: 2em;
   }
-  .about-container .projects .categories-container .category-text-container span {
+  .about-container
+    .projects
+    .categories-container
+    .category-text-container
+    span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -924,6 +958,9 @@ a {
     justify-content: start;
     margin: 1em 0;
   }
+  .about-container footer .footer-container {
+    flex-direction: row;
+  }
   .about-container footer .footer-container .email-container {
     justify-content: start;
   }
@@ -954,13 +991,13 @@ a {
   max-width: 100%;
 }
 .about-text-content h4 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 700;
   color: #505050;
 }
 .about-text-content p {
   color: #505050;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 12px;
   font-weight: 300;
   line-height: 1.6em;
@@ -988,7 +1025,7 @@ a {
   padding: 1.3em 0px;
 }
 .tech-container h4 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   color: #505050;
 }
@@ -1024,7 +1061,11 @@ a {
   .tech-container .mid-nav .icons-container {
     width: 50%;
   }
-  .tech-container .projects .categories-container .category-text-container span {
+  .tech-container
+    .projects
+    .categories-container
+    .category-text-container
+    span {
     margin: 0 0.8em;
   }
 }
@@ -1038,7 +1079,11 @@ a {
   .tech-container .projects .categories-container {
     margin-top: 2em;
   }
-  .tech-container .projects .categories-container .category-text-container span {
+  .tech-container
+    .projects
+    .categories-container
+    .category-text-container
+    span {
     font-size: 0.7em;
     margin: 0 0.9em;
   }
@@ -1057,7 +1102,12 @@ a {
   .tech-container .about-container .img-container img {
     max-height: 80%;
   }
-  .tech-container .about-container .img-container .about-text-content .text-container p {
+  .tech-container
+    .about-container
+    .img-container
+    .about-text-content
+    .text-container
+    p {
     padding: 0;
   }
   .tech-container .about-text-content {
@@ -1124,7 +1174,11 @@ a {
   .tech-container .projects .categories-container {
     margin-top: 2em;
   }
-  .tech-container .projects .categories-container .category-text-container span {
+  .tech-container
+    .projects
+    .categories-container
+    .category-text-container
+    span {
     font-size: 0.8em;
     margin: 0 0.9em;
   }
@@ -1184,6 +1238,9 @@ a {
     justify-content: start;
     margin: 1em 0;
   }
+  .tech-container footer .footer-container {
+    flex-direction: row;
+  }
   .tech-container footer .footer-container .email-container {
     justify-content: start;
   }
@@ -1204,7 +1261,7 @@ a {
 .contact-form h3 {
   font-weight: bold;
   color: #505050;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   letter-spacing: 0.2em;
   font-size: 1em;
 }
@@ -1215,16 +1272,16 @@ a {
   margin: 1em 0;
 }
 .contact-form .input-container label {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 0.8em;
   color: #505050;
 }
-.contact-form .input-container input[type=text] {
+.contact-form .input-container input[type='text'] {
   outline: none;
   border: 1px solid #505050;
   padding: 0.8em;
   margin: 0.5em 0;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #505050;
   border-radius: 5px;
 }
@@ -1235,7 +1292,7 @@ a {
   padding: 1em;
   margin: 0.5em 0;
   max-width: 100%;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #505050;
   border-radius: 5px;
 }
@@ -1250,7 +1307,7 @@ a {
   color: #505050;
   margin-top: 1.2em;
   letter-spacing: 5px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   cursor: pointer;
   border-radius: 5px;
 }
@@ -1298,7 +1355,12 @@ a {
   .contact-form .about-container .img-container img {
     max-height: 80%;
   }
-  .contact-form .about-container .img-container .about-text-content .text-container p {
+  .contact-form
+    .about-container
+    .img-container
+    .about-text-content
+    .text-container
+    p {
     padding: 0;
   }
   .contact-form .about-text-content {
@@ -1425,6 +1487,9 @@ a {
     justify-content: start;
     margin: 1em 0;
   }
+  .contact-form footer .footer-container {
+    flex-direction: row;
+  }
   .contact-form footer .footer-container .email-container {
     justify-content: start;
   }
@@ -1452,7 +1517,7 @@ footer .footer-container .email-container {
   justify-content: center;
 }
 footer .footer-container .email-container p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #505050;
   font-size: 0.7em;
 }
@@ -1637,6 +1702,9 @@ footer .footer-container .icons:hover {
     justify-content: start;
     margin: 1em 0;
   }
+  footer footer .footer-container {
+    flex-direction: row;
+  }
   footer footer .footer-container .email-container {
     justify-content: start;
   }
@@ -1646,6 +1714,20 @@ footer .footer-container .icons:hover {
   }
   footer footer .footer-container .icons {
     justify-content: start;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 3; /* Other non-webkit browsers */
+    zoom: 120%; /* Webkit browsers */
+  }
+}
+@media only screen and (min-width: 1800px) {
+  body {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 3; /* Other non-webkit browsers */
+    zoom: 140%; /* Webkit browsers */
   }
 }
 
